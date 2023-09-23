@@ -1,10 +1,11 @@
 ### 1.验证旋转矩阵是正交矩阵:
 
 
-正交矩阵定义： $AA^T = I$，即$A^{-1} = A^T$，则$A$是正交矩阵，假设 $R$表示：
+正交矩阵定义： $AA^T = I$，即$A^{-1} = A^T$，则 $A$ 是正交矩阵，假设 $R$ 表示：
 $$[e_1,~e_2,~e_3] ~~->[e_1^{'},~e_2^{'},~e_3^{'}]$$
 另有$$\boldsymbol  a =[a_1,~a_2,~a_3]$$
 则有
+
 $$
 \begin{equation} 
 [e_1,~e_2~,e_3] 
@@ -41,7 +42,9 @@ a_3^{'}
 \end{matrix} \right]
 \end{equation}
 $$
-左式由于基向量正交，得到单位阵$I$
+
+左式由于基向量正交，得到单位阵 $I$
+
 $$
 \begin{equation} 
 \left[ \begin{matrix} 
@@ -68,9 +71,11 @@ a_3^{'}
 \end{matrix} \right]
 \end{equation}
 $$
+
 （以上即为旋转矩阵$R$的定义式）
 
-若将$(1)~$式左乘$[e_1^{'},~e_2^{'},~e_3^{'}]^{T}$，右式同理得到单位阵，由于$R^{-1}$可代表逆变换，所以有
+若将 $(1)~$式左乘$[e_1^{'},~e_2^{'},~e_3^{'}]^{T}$ ，右式同理得到单位阵，由于$R^{-1}$可代表逆变换，所以有
+
 $$
 \begin{equation} 
 \left[ \begin{matrix} 
@@ -97,7 +102,9 @@ a_3^{'}
 \end{matrix} \right]
 \end{equation}
 $$
+
 所以有
+
 $$
 \begin{equation}
 R^{T} = \left[ \begin{matrix} 
@@ -115,6 +122,7 @@ e_3e_2^{'T} & e_3e_2^{'T} & e_3e_3^{'T}
 R^{-1}
 \end{equation}
 $$
+
 证毕
 ### 3.验证四元数旋转某个点后，结果是一个虚四元数(实部为零),所以仍然对应到一个三维空间点
 
@@ -130,7 +138,8 @@ $$ \mathbf{q} = w + xi + yj + zk $$
 
 $$ \mathbf{p}' = \mathbf{q}\mathbf{p}\mathbf{q}^{-1} $$
 
-将$\mathbf{p}$和$\mathbf{q}$带入可得:
+将 $\mathbf{p}$ 和 $\mathbf{q}$ 带入可得:
+
 $$
 \begin{align*}
 \mathbf{p}' & = \mathbf{q}(0 + xi + yj + zk)\mathbf{q}^{-1} \\
@@ -138,6 +147,7 @@ $$
 &= (wx - wy - wz) + (xx + wy - zz)i + (xy - wz + yz)j + (xz + wz + yz)k
 \end{align*}
 $$
+
 可以看出,旋转后的$\mathbf{p}'$仍是一个纯虚四元数,即实部为0。
 
 又因为任意虚四元数 uniquely 对应一个三维空间点。
