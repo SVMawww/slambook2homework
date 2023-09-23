@@ -10,14 +10,95 @@ $$
 a_1 \\
 a_2 \\
 a_3 
-\end{matrix} \right] = [e_1^{'},~e_2^{'},~e_3^{'}] 
+\end{matrix} \right] 
+= 
+[e_1^{'},~e_2^{'},~e_3^{'}] 
 \left[ \begin{matrix} 
 a_1^{'} \\
 a_2^{'} \\
 a_3^{'} 
 \end{matrix} \right]
-\end{equation}$$
-$(1)$ 式两边乘
+\end{equation}
+$$
+$(1)$ 式左乘$[e_1,~e_2~,e_3]^T$：
+$$
+\begin{equation} 
+[e_1,~e_2~,e_3]^T
+[e_1,~e_2~,e_3] 
+\left[ \begin{matrix} 
+a_1 \\
+a_2 \\
+a_3 
+\end{matrix} \right] 
+= 
+[e_1,~e_2~,e_3]^T[e_1^{'},~e_2^{'},~e_3^{'}] 
+\left[ \begin{matrix} 
+a_1^{'} \\
+a_2^{'} \\
+a_3^{'} 
+\end{matrix} \right]
+\end{equation}
+$$
+左式由于基向量正交，得到单位阵$I$
+$$
+\begin{equation} 
+\left[ \begin{matrix} 
+a_1 \\
+a_2 \\
+a_3 
+\end{matrix} \right] 
+=
+\left[ \begin{matrix} 
+e_1^{T}e_1^{'} & e_1^{T}e_2^{'} & e_1^{T}e_3^{'}   \\
+e_2^{T}e_1^{'} & e_2^{T}e_2^{'} & e_2^{T}e_3^{'}  \\
+e_3^{T}e_2^{'} & e_3^{T}e_2^{'} & e_3^{T}e_3^{'}   
+\end{matrix} \right]
+\left[ \begin{matrix} 
+a_1^{'} \\
+a_2^{'} \\
+a_3^{'} 
+\end{matrix} \right]
+= 
+R \left[ \begin{matrix} 
+a_1^{'} \\
+a_2^{'} \\
+a_3^{'} 
+\end{matrix} \right]
+\end{equation}
+$$
+（以上即为旋转矩阵$R$的定义式）
+
+若将$(1)~$式左乘$[e_1^{'},~e_2^{'},~e_3^{'}]^{T}$，右式同理得到单位阵，由于$R^{-1}$可代表逆变换，所以有
+$$
+\begin{equation} 
+\left[ \begin{matrix} 
+e_1^{'T}e_1 & e_1^{'T}e_2 & e_1^{'T}e_3   \\
+e_2^{'T}e_1 & e_2^{'T}e_2 & e_2^{'T}e_3  \\
+e_3^{'T}e_2 & e_3^{'T}e_2 & e_3^{'T}e_3   
+\end{matrix} \right]
+\left[ \begin{matrix} 
+a_1 \\
+a_2 \\
+a_3  
+\end{matrix} \right]
+= 
+R^{-1}  \left[ \begin{matrix} 
+a_1 \\
+a_2 \\
+a_3  
+\end{matrix} \right]
+= 
+\left[ \begin{matrix} 
+a_1^{'} \\
+a_2^{'} \\
+a_3^{'}  
+\end{matrix} \right]
+\end{equation}
+$$
+所以有
+$$
+
+$$
 ### 3.验证四元数旋转某个点后，结果是一个虚四元数(实部为零),所以仍然对应到一个三维空间点
 <!-- $$ \left[
 \begin{matrix} 
