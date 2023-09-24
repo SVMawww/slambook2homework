@@ -3,9 +3,9 @@
 
 正交矩阵定义： $AA^T = I$ ，即 $A^{-1} = A^T$ ，则 $A$ 是正交矩阵，假设 $R$ 表示：
 $$[e_1,~e_2,~e_3] ~~->[e_1^{'},~e_2^{'},~e_3^{'}]$$
-另有$$\boldsymbol  a =[a_1,~a_2,~a_3]$$
+另有
+$$\boldsymbol  a =[a_1,~a_2,~a_3] $$ 
 则有
-
 $$
 \begin{equation} 
 [e_1,~e_2~,e_3] 
@@ -125,34 +125,34 @@ $$
 
 证毕
 ## 3.验证四元数旋转某个点后，结果是一个虚四元数(实部为零),所以仍然对应到一个三维空间点
-
-设三维空间中的某点为$\mathbf{p} = (x, y, z)$,用纯虚四元数表示为:
-
-$$ \mathbf{p} = 0 + xi + yj + zk = [0,\boldsymbol v] $$
-
-设旋转四元数为:
-
-$$ \mathbf{q} = w + xi + yj + zk $$
-
-四元数旋转公式为:
-
-$$ \mathbf{p}' = \mathbf{q}\mathbf{p}\mathbf{q}^{-1} $$
-
-将 $\mathbf{p}$ 和 $\mathbf{q}$ 带入可得:
+设三维空间中的某点为$\boldsymbol {p} = (x, y, z)$,用纯虚四元数表示为：
 
 $$
+\boldsymbol  {p} = 0 + xi + yj + zk = [0,\boldsymbol v]
+$$
+设旋转四元数为：
+
+$$
+\boldsymbol  {q} = [\boldsymbol s_a,~v_a]
+$$
+ 四元数旋转公式为：
+$$
+\boldsymbol {p}'= \boldsymbol  {q}\boldsymbol  {p}\boldsymbol  {q}^{-1}
+$$
+又有，四元数的乘法公式为： 
+$$
+\boldsymbol q_a\boldsymbol q_b = [ s_a s_b - \boldsymbol v_a^T\boldsymbol v_b,~ s_a\boldsymbol v_b +  s_b\boldsymbol v_a + \boldsymbol v_a \times \boldsymbol v_b]
+$$
+将 $\boldsymbol  {p}$ 和 $\boldsymbol  {q}$ 带入可得，$\boldsymbol p'$的实部为：
+$$
 \begin{align*}
-\mathbf{p}' & = \mathbf{q}(0 + xi + yj + zk)\mathbf{q}^{-1} \\
-&= (w + xi + yj + zk)(0 + xi + yj + zk)(-w + xi + yj + zk) \\
-&= (wx - wy - wz) + (xx + wy - zz)i + (xy - wz + yz)j + (xz + wz + yz)k
+Re(P') & = -\boldsymbol v_a^T\boldsymbol vs_a - (s_a + \boldsymbol v_a\times\boldsymbol v)^T(-\boldsymbol v_a) \\
+&= -\boldsymbol v_a^T\boldsymbol vs_a + \boldsymbol v_a^T\boldsymbol vs_a + (\boldsymbol v_a\times \boldsymbol v)^T \boldsymbol v_a \\
+&= (\boldsymbol v_a\times \boldsymbol v)^T \boldsymbol v_a
 \end{align*}
 $$
 
-可以看出,旋转后的$\mathbf{p}'$仍是一个纯虚四元数,即实部为0。
-
-又因为任意虚四元数 uniquely 对应一个三维空间点。
-
-所以四元数旋转三维点后的结果$\mathbf{p}'$仍对应一个三维空间点。
+由于$\boldsymbol v_a\times\boldsymbol v$ 和$\boldsymbol v_a$垂直，于是$Re(P')$等于$0$，即旋转后的点仍然是一个虚四元数。
 ## 4.画表总结旋转矩阵、轴角、欧拉角、四元数的转换关系。
 <center>
     <img style="border-radius: 0.3125em;
