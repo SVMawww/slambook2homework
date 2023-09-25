@@ -135,7 +135,7 @@ $$
 $$
 \boldsymbol  {q} = [\boldsymbol s_a,~v_a]
 $$
- 四元数旋转公式为：
+四元数旋转公式为：
 $$
 \boldsymbol {p}'= \boldsymbol  {q}\boldsymbol  {p}\boldsymbol  {q}^{-1}
 $$
