@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.11 )
-
+project(test)
 set(CMAKE_CXX_FLAGS "-std=c++17")
 
 find_package(PCL REQUIRED)
