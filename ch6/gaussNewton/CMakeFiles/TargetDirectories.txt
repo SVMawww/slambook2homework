@@ -1,0 +1,3 @@
+/home/moyu/learn_slam/homework/ch6/build/CMakeFiles/gaussNewton.dir
+/home/moyu/learn_slam/homework/ch6/build/CMakeFiles/edit_cache.dir
+/home/moyu/learn_slam/homework/ch6/build/CMakeFiles/rebuild_cache.dir

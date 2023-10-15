@@ -1,0 +1,15 @@
+[
+    {
+        "arguments": [
+            "/usr/local/bin/c++",
+            "-c",
+            "-isystem",
+            "/usr/local/include/opencv4",
+            "-o",
+            "CMakeFiles/gaussNewton.dir/gaussNewton.cpp.o",
+            "../gaussNewton.cpp"
+        ],
+        "directory": "/home/moyu/learn_slam/homework/ch6/build",
+        "file": "../gaussNewton.cpp"
+    }
+]
