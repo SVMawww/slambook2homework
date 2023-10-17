@@ -122,5 +122,5 @@ int main(int argc, char **argv) {
     Eigen::Vector3d abc_estimate = v->estimate();
     cout << "estimated model: " << abc_estimate.transpose() << endl;
 
-  return 0;
+    return 0;
 }
