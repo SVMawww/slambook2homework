@@ -1,0 +1,3 @@
+/home/moyu/learn_slam/homework/ch6/ceres/CMakeFiles/fitting.dir
+/home/moyu/learn_slam/homework/ch6/ceres/CMakeFiles/edit_cache.dir
+/home/moyu/learn_slam/homework/ch6/ceres/CMakeFiles/rebuild_cache.dir
