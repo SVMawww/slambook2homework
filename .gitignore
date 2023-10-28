@@ -3,7 +3,8 @@ pcl/test/build
 pcl/filers/VoxelGrid/build
 pcl/filers/PassThrough/build
 */build/
-
+Makefile
+/build/
 # Prerequisites
 *.d
 
