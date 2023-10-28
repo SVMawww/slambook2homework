@@ -1,3 +1,0 @@
-/home/moyu/learn_slam/homework/pcl/filers/StatisticalOutlierRemoval/build/CMakeFiles/statistical_outlier_removal.dir
-/home/moyu/learn_slam/homework/pcl/filers/StatisticalOutlierRemoval/build/CMakeFiles/edit_cache.dir
-/home/moyu/learn_slam/homework/pcl/filers/StatisticalOutlierRemoval/build/CMakeFiles/rebuild_cache.dir
