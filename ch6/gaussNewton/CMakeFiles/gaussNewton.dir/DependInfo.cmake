@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/moyu/learn_slam/homework/ch6/gaussNewton.cpp" "CMakeFiles/gaussNewton.dir/gaussNewton.cpp.o" "gcc" "CMakeFiles/gaussNewton.dir/gaussNewton.cpp.o.d"
+  "/home/moyu/learn_slam/homework/ch6/gaussNewton/gaussNewton.cpp" "CMakeFiles/gaussNewton.dir/gaussNewton.cpp.o" "gcc" "CMakeFiles/gaussNewton.dir/gaussNewton.cpp.o.d"
   )
 
 # Targets to which this target links.

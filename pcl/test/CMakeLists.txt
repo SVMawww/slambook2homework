@@ -9,4 +9,5 @@ add_definitions( ${PCL_DEFINITIONS} )
 
 add_executable(AddPointStyle_test main.cpp)
 
-target_link_libraries(AddPointStyle_test ${PCL_LIBRARIES} -lpthread -lboost_thread -DCMAKE_EXPORT_COMPILE_COMMANDS=1)
+target_link_libraries(AddPointStyle_test ${PCL_LIBRARIES} -lpthread -lboost_thread -DCMAKE_EXPORT_COMPILE_COMMANDS=1) 
+#

@@ -54,10 +54,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/moyu/learn_slam/homework/ch6
+CMAKE_SOURCE_DIR = /home/moyu/learn_slam/homework/ch6/gaussNewton
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/moyu/learn_slam/homework/ch6/build
+CMAKE_BINARY_DIR = /home/moyu/learn_slam/homework/ch6/gaussNewton
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/gaussNewton.dir/clean
 CMakeFiles/gaussNewton.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gaussNewton.dir/build.make CMakeFiles/gaussNewton.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gaussNewton.dir/build.make CMakeFiles/gaussNewton.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyu/learn_slam/homework/ch6/build/CMakeFiles --progress-num=1,2 "Built target gaussNewton"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyu/learn_slam/homework/ch6/gaussNewton/CMakeFiles --progress-num=1,2 "Built target gaussNewton"
 .PHONY : CMakeFiles/gaussNewton.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gaussNewton.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyu/learn_slam/homework/ch6/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyu/learn_slam/homework/ch6/gaussNewton/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gaussNewton.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyu/learn_slam/homework/ch6/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyu/learn_slam/homework/ch6/gaussNewton/CMakeFiles 0
 .PHONY : CMakeFiles/gaussNewton.dir/rule
 
 # Convenience name for target.
