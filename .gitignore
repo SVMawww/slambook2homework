@@ -2,6 +2,7 @@
 pcl/test/build
 pcl/filers/VoxelGrid/build
 pcl/filers/PassThrough/build
+build/
 */build/
 Makefile
 /build/
