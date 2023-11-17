@@ -118,8 +118,8 @@ int main (int argc, char** argv)
   // 等待直到可视化窗口关闭
   while (!viewer_final->wasStopped ())
   {
-    viewer_final->spin();
-    // std::this_thread::sleep_for(100ms);
+    viewer_final->spinOnce (1000);
+    std::this_thread::sleep_for(1000ms);
     // std::this_thread::sleep_for(std::chrono::milliseconds(100));
   }
 
