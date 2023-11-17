@@ -1,3 +1,0 @@
-/home/moyu/learn_slam/homework/ch6/g2o/CMakeFiles/fitting.dir
-/home/moyu/learn_slam/homework/ch6/g2o/CMakeFiles/edit_cache.dir
-/home/moyu/learn_slam/homework/ch6/g2o/CMakeFiles/rebuild_cache.dir

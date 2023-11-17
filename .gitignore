@@ -6,6 +6,7 @@ pcl/filers/PassThrough/build
 Makefile
 /build/
 .cache/
+*/.cache/
 # Prerequisites
 *.d
 
