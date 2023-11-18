@@ -4,7 +4,6 @@
 
 [TOC]
 
-# 学习周报
 
 ## 第七讲&&第八讲 视觉里程计
 
@@ -210,37 +209,3 @@ $$
 \frac{\partial\boldsymbol{q}}{\partial\delta\boldsymbol{\xi}}=[\boldsymbol{I},-\boldsymbol{q}^\wedge]
 $$
 根据雅各比矩阵进行迭代求解。
-
-## 下周计划
-
-本周内容侧重于数学推导，看懂了对极几何、PnP、ICP、光流他们到底在做什么，下周将使用g2o和ceres针对第七章的课后题编程实战进行突破。
-
-
-
-
-### 问题1
-
-李代数扰动模型这里，红框里的从 $\exp(\varphi^{\wedge})$ 到 $\boldsymbol I+\varphi^{\wedge}$ 这里没有看懂，猜测是做了一次泰勒展开嘛？
-
-![image-20231103113829187](C:\Users\yy\AppData\Roaming\Typora\typora-user-images\image-20231103113829187.png)
-
-### 问题2
-
-这里公式（10.5）为啥对 $\boldsymbol T_i^{-1}$ 加一个左扰动是把扰动项乘在右边，并且还要加一个负号哇 （李代数看得好头大QAQ）
-
-还有
-$$
-\Delta\boldsymbol{\xi}_{ij}=\boldsymbol{\xi}_i^{-1}\circ\boldsymbol{\xi}_j=\ln\left(\boldsymbol{T}_i^{-1}\boldsymbol{T}_j\right)^\vee
-$$
-这里的这个 “$\circ$” 符号是“对李代数定义的一种运算” 嘛？
-
-![image-20231103203053870](C:\Users\yy\AppData\Roaming\Typora\typora-user-images\image-20231103203053870.png)
-
-### 问题3
-
-14讲大致过了一遍了，感觉从后端2开始后面就介绍的比较笼统，看的也是一知半解，比如第十讲滑动窗口法，不太理解为什么边缘化 $\boldsymbol x_1$ 之后会影响海塞矩阵的稀疏性，具体的步骤数学上的和工程上的处理都没有详细介绍，只是能感性的理解他的思想，
-
-![image-20231103114545762](C:\Users\yy\AppData\Roaming\Typora\typora-user-images\image-20231103114545762.png)![image-20231103193115796](C:\Users\yy\AppData\Roaming\Typora\typora-user-images\image-20231103193115796.png)
-
-还有词袋模型的一些细节也不够清晰，在考虑**是否要阅读一下ORB-SLAM的源代码，或者做手写VIO那个习题就够了**，才能感受一个SLAM系统到底是怎么构建的。
-
